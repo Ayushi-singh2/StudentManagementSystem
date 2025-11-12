@@ -1,0 +1,19 @@
+<p>edit-student works!</p>
+
+<h2>Edit Student</h2>
+
+<form (ngSubmit)="update()">
+  <label>Name:</label>
+  <input [(ngModel)]="student.name" name="name" required />
+
+  <label>Email:</label>
+  <input [(ngModel)]="student.email" name="email" required />
+
+  <label>Course:</label>
+  <input [(ngModel)]="student.course" name="course" required />
+
+  <label>Age:</label>
+  <input type="number" [(ngModel)]="student.age" name="age" required />
+
+  <button type="submit">Update</button>
+</form>
